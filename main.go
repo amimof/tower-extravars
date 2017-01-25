@@ -279,7 +279,6 @@ func main() {
 								log.Error(err)
 							}
 
-							fmt.Printf("%s %s %s\n", k, v, reflect.TypeOf(eo[k]).Kind())
 							if bytes.Compare(a, b) < 0 {
 								log.Debugf("[%s] %s : %s", "U", k, v)	
 							}
